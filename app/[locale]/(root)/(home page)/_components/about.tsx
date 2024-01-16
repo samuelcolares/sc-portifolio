@@ -9,7 +9,7 @@ const About = async () => {
   const translate = await getTranslations("About");
   return (
     <article
-      className="min-h-screen px-6 lg:px-20 relative flex flex-col justify-center items-center gap-6 pt-16 lg:pt-4 pb-4"
+      className="lg:min-h-screen min-h-dvh px-6 lg:px-20 relative flex flex-col justify-center items-center gap-6 pt-16 lg:pt-4 pb-4"
       id="about"
     >
       <h2 className="lg:text-2xl text-xl self-start dark:text-[#f77872] text-[#E4170C] lg:mx-20">
