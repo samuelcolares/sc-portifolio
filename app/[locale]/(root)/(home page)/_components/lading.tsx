@@ -34,7 +34,7 @@ const Landing = async () => {
   ];
   return (
     <section
-      className="flex flex-col items-center justify-center h-screen lg:px-20 px-6 relative"
+      className="flex flex-col items-center justify-center lg:h-screen h-dvh lg:px-20 px-6 relative"
       id="landing"
     >
       <div className="flex lg:flex-row flex-col items-center justify-center lg:gap-20 gap-10">
