@@ -1,0 +1,62 @@
+[
+  {
+    "type": {
+      "en": "Seven Studio",
+      "pt-br": "Seven Studio"
+    },
+    "title": {
+      "en": "OKAlev",
+      "pt-br": "OKAlev"
+    },
+    "description": {
+      "en": "In this project carried out for a company specialized in custom furniture sales, the challenge was to completely revamp the old website, which featured outdated technologies. The goal was to enhance performance and also refresh its appearance.",
+      "pt-br": "Neste projeto realizado para uma empresa especializada em venda de móveis projetados o desafio era refazer por completo o antigo site, que contava com tecnologias datadas. O objetivo era aumentar a perfomance e também renovando a aparência do mesmo."
+    },
+    "links": {
+      "webiste": "https://www.okalev.com.br/"
+    },
+    "techStack": [
+      "Next.js 13",
+      "TypeScript",
+      "Styled Components",
+      "React Slick Carousel",
+      "React Player",
+      "MUI"
+    ],
+    "images": [
+      "https://imgur.com/fhst8ar.png",
+      "https://imgur.com/eex55yY.png",
+      "https://imgur.com/CNM8oAb.png",
+      "https://imgur.com/rHvUfeR.png"
+    ]
+  },
+  {
+    "type": {
+      "en": "Seven Studio",
+      "pt-br": "Seven Studio"
+    },
+    "title": {
+      "en": "Victor Alves Personal",
+      "pt-br": "Victor Alves Personal"
+    },
+    "description": {
+      "en": "In this project carried out for a fitness professional, the aim was to deliver a website that effectively showcased the individual's expertise and the range of offerings provided by the personal trainer.",
+      "pt-br": "Neste projeto realizado para um profissional de educação física, o objetivo era entregar um site que destacasse adequadamente o trabalho do profissional, bem como as diversas ofertas disponibilizadas pelo personal."
+    },
+    "links": {
+      "webiste": "http://victoralvespersonal.com.br/"
+    },
+    "techStack": [
+      "Next.js 13",
+      "TypeScript",
+      "TailwindCSS",
+      "Lucide Icons",
+      "Swiper.js"
+    ],
+    "images": [
+      "https://imgur.com/G2LhA5S.png",
+      "https://imgur.com/eJEfM5c.png",
+      "https://imgur.com/u7qzGNy.png"
+    ]
+  }
+]

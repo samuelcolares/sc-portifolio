@@ -1,0 +1,42 @@
+{
+  "Index": {
+    "ProfileImageAltText": "Samuel Colares Pic",
+    "t1": "HI",
+    "t2": "Hi, my name is Samuel",
+    "t3": "Hi, my name is Samuel, and normally I'm doing some of these things: ",
+    "t4": "Hi, my name is Samuel, and normally I'm doing some of these things: 1. coding",
+    "t5": "Hi, my name is Samuel, and normally I'm doing some of these things: 2. lifting weights",
+    "t6": "Hi, my name is Samuel, and normally I'm doing some of these things: 3. playing games",
+    "t7": "Hi, my name is Samuel, and normally I'm doing some of these things: 4. eating pizza",
+    "t8": "And most important,",
+    "t9": "I'm a Front-end web developer",
+    "t10": "Or just:",
+    "t11": "Samuel Colares, Front-end Developer."
+  },
+  "Navbar": {
+    "ThemeDark": "Toggle Dark Theme",
+    "ThemeLight": "Toggle Light Theme",
+    "Home": "Home",
+    "AcessibilityHome": "Go to landing section",
+    "Projects": "Projects",
+    "AcessibilityProjects": "Go to projects section",
+    "AcessibilityGithub": "Link to Github Profile",
+    "AcessibilityLinkedIn": "Link to LinkedIn Profile",
+    "OpenMenu": "Open Menu",
+    "CloseMenu": "Close Menu",
+    "AcessibilityMenu": "Toggle Button Open/Close Menu"
+  },
+  "About": {
+    "title": "aboutMe",
+    "about1": "Since I embarked on this vast journey in the programming world, I've been captivated by the possibilities that the front-end can offer. I've been specializing and dedicating myself to delivering the best performance and improved accessibility in all the projects I engage in.",
+    "about2": "I prefer working with Next.js and Typescript whenever possible, but I'm always open to accepting new challenges."
+  },
+  "Projects": {
+    "description": "Description:",
+    "techStack": "Built with:"
+  },
+  "Acessibility":{
+    "carouselPrevButton":"Previous Slide",
+    "carouselNextButton":"Next Slide"
+  }
+}

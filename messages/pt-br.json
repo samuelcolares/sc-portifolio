@@ -1,0 +1,42 @@
+{
+  "Index": {
+    "ProfileImageAltText": "Samuel Colares Foto",
+    "t1": "OI",
+    "t2": "Oi, meu nome é Samuel",
+    "t3": "Oi, meu nome é Samuel, e normalmente estou fazendo alguma dessas coisas: ",
+    "t4": "1. programando",
+    "t5": "1. programando, 2. levantando pesos",
+    "t6": "1. programando, 2. levantando pesos, 3. jogando",
+    "t7": "1. programando, 2. levantando pesos, 3. jogando, 4. comendo pizza",
+    "t8": "E o mais importante,",
+    "t9": "Sou um desenvolvedor Front-end",
+    "t10": "Ou apenas:",
+    "t11": "Samuel Colares, Desenvolvedor Front-end."
+  },
+  "Navbar": {
+    "ThemeDark": "Mudar para tema escuro",
+    "ThemeLight": "Mudar para tema claro",
+    "Home": "Início",
+    "AcessibilityHome": "Ir para sessão inicial",
+    "Projects": "Projetos",
+    "AcessibilityProjects": "Ir para sessão de projetos",
+    "AcessibilityGithub": "Link para perfil do Github",
+    "AcessibilityLinkedIn": "Link para Perfil do LinkedIn",
+    "OpenMenu": "Abrir Menu",
+    "CloseMenu": "Fechar Menu",
+    "AcessibilityMenu": "Botão Abrir/Fechar Menu"
+  },
+  "About": {
+    "title": "sobreMim",
+    "about1": "Desde que iniciei minha jornada neste vasto mundo da programação, encantei-me com as possibilidades que o front-end pode proporcionar. Venho me especializando e empenhando para entregar o melhor desempenho e maior acessibilidade em todos os projetos que participo. ",
+    "about2": "Opto por trabalhar sempre que possível com Next.js e Typescript, mas estou sempre disposto a aceitar novos desafios."
+  },
+  "Projects": {
+    "description": "Descrição:",
+    "techStack": "Feito com:"
+  },
+  "Acessibility":{
+    "carouselPrevButton":"Voltar Slide",
+    "carouselNextButton":"Avançar Slide"
+  }
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "type": {
+      "en": "Personal Project",
+      "pt-br": "Projeto Pessoal"
+    },
+    "title": {
+      "en": "Snippets Library",
+      "pt-br": "Livraria de trecho de códigos"
+    },
+    "description": {
+      "en": "Here and there in the course of a project I remember that somewhere in middle my codes exists a snippet that fit exaclty what I need. So I made this little project to not waste much time searching for, and also to enhance my knowledge of Server Actions on Next 14 and NEXTAUTH.",
+      "pt-br": "De vez em quando, no decorrer de um projeto, eu me lembro de que em algum lugar no meio do meu código existe um trecho que se encaixa exatamente no que eu preciso. Então, criei este pequeno projeto para não perder muito tempo procurando e também para aprimorar meu conhecimento em Server Actions no Next 14 e NEXTAUTH."
+    },
+    "links": {
+      "github": "https://github.com/samuelcolares/SnippetsLibrary"
+    },
+    "techStack": [
+      "Next.js 14",
+      "TypeScript",
+      "Prisma",
+      "Monaco Editor",
+      "NextUI",
+      "NextAuth.js",
+      "TailwindCSS"
+    ],
+    "images": [
+      "https://camo.githubusercontent.com/e0e65be11e2db79f4e942e234c12f185c5dffb1f2cd51c4591e0ab89ccb513a0/68747470733a2f2f696d6775722e636f6d2f316f346b4343642e706e67",
+      "https://camo.githubusercontent.com/d7836cc818a0a202b780c66cd7e06903ed1063dc4ac6090ac92e5850331dd76f/68747470733a2f2f696d6775722e636f6d2f75676f614346442e706e67",
+      "https://camo.githubusercontent.com/e9c2e8e699b47f9a6f83916aaa21647a49549e3b1fe4ce7a7ace823278e76ee0/68747470733a2f2f696d6775722e636f6d2f54664154434a732e706e67",
+      "https://camo.githubusercontent.com/211b09ce1aef685d0aab1ca9865064e97070243fc0cfdc4c82e5a53bafd06be6/68747470733a2f2f696d6775722e636f6d2f744a50315174312e706e67"
+    ]
+  },
+  {
+    "type": {
+      "en": "Personal Project",
+      "pt-br": "Projeto Pessoal"
+    },
+    "title":{
+      "en":"Daily-refresh Redux ToDo list + Wish List",
+      "pt-br":"Redux lista de tarefas com reinício diário + lista de desejos"
+    },
+    "description": {
+      "en": "Adult life is all about an everyday pile full of daily tasks to be completed. Sometimes, I forget one or another, so I made this little project to check if I don't forget anything important and also to enhance my knowledge of Redux. This project uses localStorage (HTML Web Storage built-in API) so you can close the application whenever you feel like it, and when reopened, all the tasks will be there. Every day at 00:00 of your local time, all tasks completed the day before will be unmarked as pending tasks.",
+      "pt-br": "A vida adulta é basicamente um amontoado de tarefas diárias a serem concluídas. Às vezes, eu esqueço uma ou outra, então criei este pequeno projeto para verificar se não esqueço nada importante e também para aprimorar meu conhecimento em Redux. Este projeto utiliza o localStorage (API interna de Armazenamento Web HTML) para que você possa fechar o aplicativo quando quiser, e ao reabrir, todas as tarefas ainda estarão lá (desde que você acesse pelo o mesmo browser 🤓). Todos os dias, à meia-noite do seu horário local, todas as tarefas concluídas no dia anterior serão marcadas como pendentes novamente."
+    },
+    "links": {
+      "webiste": "https://dailytodo-sam.vercel.app/",
+      "github": "https://github.com/samuelcolares/dailyTodo"
+    },
+    "techStack": [
+      "Next.js 14",
+      "TypeScript",
+      "Redux",
+      "LocalStorage",
+      "Shadcn/UI",
+      "React-Hook-Form",
+      "Zod",
+      "TailwindCSS"
+    ],
+    "images": [
+      "https://camo.githubusercontent.com/5ce8a2fb842a910c778f991122e79cb4ca84fc61fdf816f7a3e72f855ecf85c9/68747470733a2f2f696d6775722e636f6d2f385a55505537492e706e67",
+      "https://imgur.com/mBRw3Ca.png",
+      "https://imgur.com/IuRentc.png"
+    ]
+  }
+]
