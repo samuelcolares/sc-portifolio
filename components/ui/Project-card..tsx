@@ -22,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <Card className="bg-transparent flex flex-col">
       <CardHeader>
-        <CardTitle className="text-2xl">
+        <CardTitle className="text-2xl lg:w-auto w-3/4">
           {params.locale === "en" ? title.en : title["pt-br"]}
         </CardTitle>
         <Badge

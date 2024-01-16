@@ -3,6 +3,7 @@ import { useMessages } from "next-intl";
 import NextIntlProvider from "@/providers/NextIntlProvider";
 
 import { Navbar, MobileNavbar } from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const Layout = ({
   children,
@@ -17,6 +18,7 @@ const Layout = ({
       <MobileNavbar />
       <Navbar />
       <main className="w-full">{children}</main>
+      <Footer />
     </NextIntlProvider>
   );
 };

@@ -32,6 +32,7 @@
     "about2": "Opto por trabalhar sempre que possível com Next.js e Typescript, mas estou sempre disposto a aceitar novos desafios."
   },
   "Projects": {
+    "title": "algunsProjetos",
     "description": "Descrição:",
     "techStack": "Feito com:"
   },

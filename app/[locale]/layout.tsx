@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang={params.locale} suppressHydrationWarning>
-      <body className={cn("transition-all flex", jost.className)}>
+      <body className={cn("transition-all", jost.className)}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
