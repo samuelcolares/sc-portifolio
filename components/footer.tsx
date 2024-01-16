@@ -1,14 +1,14 @@
-"use client";
 import Link from "next/link";
 import React from "react";
 import dayjs from "dayjs";
-import { useParams } from "next/navigation";
 import br from "dayjs/locale/pt-br";
 import DrawerDialog from "./ResonsiveModal";
+import { getTranslations } from "next-intl/server";
 
-const Footer = () => {
+const Footer = async () => {
   const day = dayjs().locale(br).format("HH:mm A");
   const timezone = dayjs().locale(br).format("Z");
+  const translate = await getTranslations("Footer")
   return (
     <footer
       id="footer"
@@ -17,13 +17,13 @@ const Footer = () => {
       <div className="flex lg:flex-row flex-col gap-5 justify-between w-full lg:px-20 lg:items-center">
         <div className="flex gap-12">
           <div>
-            <h3 className="uppercase">Version</h3>
+            <h3 className="uppercase">{translate("version")}</h3>
             <span className="hover:text-primary-color transition-colors">
-              2024 &copy; Edition
+            {translate("edition")}
             </span>
           </div>
           <div>
-            <h3 className="uppercase">Local Time</h3>
+            <h3 className="uppercase">{translate("localTime")}</h3>
             <div className="flex gap-2 hover:text-primary-color transition-colors">
               <span>{day}</span>
               <span>GMT{timezone}</span>
@@ -31,30 +31,34 @@ const Footer = () => {
           </div>
         </div>
         <div className="lg:order-last order-first">
-          <h3 className="uppercase">Contact Details</h3>
-          <ul className="flex lg:justify-between lg:gap-0 gap-4">
+          <h3 className="uppercase">{translate("contact")}</h3>
+          <ul className="flex lg:justify-between gap-4">
             <li className="hover:text-primary-color transition-colors">
               <DrawerDialog
                 href="mailto:samuelcolaresdeaquino@gmail.com"
                 inputValue="samuelcolaresdeaquino@gmail.com"
-                sendString="E-mail"
-                title="E-mail Detail"
+                sendString={translate("sendStringEmail")}
+                title="E-mail"
                 trigger="E-mail"
+                acessibilityString={translate("copy")}
+                closeString={translate("close")}
               />
             </li>
             <li className="hover:text-primary-color transition-colors">
               <DrawerDialog
                 href="https://wa.link/vjo7pg"
                 inputValue="+5585996887338"
-                sendString="Whatsapp Message"
-                title="Phone Detail"
-                trigger="Phone"
+                sendString={translate("sendString")}
+                title={translate("title")}
+                trigger={translate("triggerPhone")}
+                acessibilityString={translate("copy")}
+                closeString={translate("close")}
               />
             </li>
           </ul>
         </div>
         <div className="lg:order-last order-first">
-          <h3 className="uppercase">Socials</h3>
+          <h3 className="uppercase">{translate("socials")}</h3>
           <ul className="flex gap-4">
             <li className="hover:text-primary-color transition-colors">
               <Link href={"https://www.linkedin.com/in/samuelcolares/"}>

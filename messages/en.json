@@ -36,11 +36,24 @@
     "description": "Description:",
     "techStack": "Built with:"
   },
-  "Acessibility":{
-    "carouselPrevButton":"Previous Slide",
-    "carouselNextButton":"Next Slide",
+  "Acessibility": {
+    "carouselPrevButton": "Previous Slide",
+    "carouselNextButton": "Next Slide",
     "changeLanguage": "Change Language",
     "changeLanguageTo": "Alternar idioma para Português Brasileiro (pt-BR)",
     "h1": "Samuel Colares, Front-end Web Developer."
+  },
+  "Footer": {
+    "close": "Close",
+    "copy": "Copy",
+    "version": "Version",
+    "edition": "2024 © Edition",
+    "localTime": "Local Time",
+    "contact": "Contact Details",
+    "socials": "Socials",
+    "triggerPhone": "Phone",
+    "title": "Phone detail",
+    "sendString": "Send Whatsapp message",
+    "sendStringEmail": "Send E-mail"
   }
 }

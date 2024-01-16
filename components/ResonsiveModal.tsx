@@ -28,6 +28,8 @@ type DrawerDialogProps = {
   sendString: string;
   inputValue: string;
   href: string;
+  acessibilityString: string;
+  closeString: string;
 };
 
 const DrawerDialog: React.FC<DrawerDialogProps> = ({
@@ -36,6 +38,8 @@ const DrawerDialog: React.FC<DrawerDialogProps> = ({
   sendString,
   inputValue,
   href,
+  acessibilityString,
+  closeString,
 }) => {
   const [Icon, setIcon] = React.useState<LucideIcon>(Copy);
   const [open, setOpen] = React.useState(false);
@@ -66,21 +70,21 @@ const DrawerDialog: React.FC<DrawerDialogProps> = ({
         </DialogHeader>
         <div>
           <div className="relative">
-            <Input readOnly value={InputValue} className="text-lg px-2 py-6"/>
+            <Input readOnly value={InputValue} className="text-lg px-2 py-6" />
             <Button
               className="absolute top-1/2 -translate-y-1/2 right-2 p-1 h-auto transition-opacity"
               onClick={copyToClipboard}
             >
               <Icon className="h-4 w-4" />
-              <span className="sr-only">copy</span>
+              <span className="sr-only">{acessibilityString}</span>
             </Button>
           </div>
           <div className="mt-2 flex gap-2">
             <Button className="flex-1" asChild>
-              <Link href={LinkHref}>Send {SendString}</Link>
+              <Link href={LinkHref}>{SendString}</Link>
             </Button>
             <DialogClose asChild>
-              <Button className="flex-1">Close</Button>
+              <Button className="flex-1">{closeString}</Button>
             </DialogClose>
           </div>
         </div>
@@ -103,15 +107,15 @@ const DrawerDialog: React.FC<DrawerDialogProps> = ({
               onClick={copyToClipboard}
             >
               <Icon className="h-4 w-4" />
-              <span className="sr-only">copy</span>
+              <span className="sr-only">{acessibilityString}</span>
             </Button>
           </div>
           <div className="mt-2 flex gap-2">
             <Button className="flex-1" asChild>
-              <Link href={LinkHref}>Send {SendString}</Link>
+              <Link href={LinkHref}>{SendString}</Link>
             </Button>
             <DrawerClose asChild>
-              <Button className="flex-1">Close</Button>
+              <Button className="flex-1">{closeString}</Button>
             </DrawerClose>
           </div>
         </div>

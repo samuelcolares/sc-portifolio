@@ -42,5 +42,19 @@
     "changeLanguague": "Mudar Idioma",
     "changeLanguageTo": "Change language to english (en-US)",
     "h1": "Samuel Colares, Desenvolvedor Web Front-end."
+  },
+  "Footer":{
+    "close": "Fechar",
+    "copy": "Copiar",
+    "version": "Versão",
+    "edition": "Edição © 2024",
+    "localTime": "Horário Local",
+    "contact": "Contato",
+    "socials": "Redes Sociais",
+    "triggerPhone": "Telefone",
+    "title": "Detalhe de contato",
+    "sendString": "Contatar pelo Whatsapp",
+    "sendStringEmail": "Enviar E-mail"
   }
+
 }
