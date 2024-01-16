@@ -43,25 +43,6 @@ html.light body::-webkit-scrollbar-thumb:hover {
 }
 
 
-/* @media (prefers-color-scheme: dark) {
-  body::-webkit-scrollbar {
-    background: rgba(255, 255, 255, 0.2);
-    width: 0.5em;
-  }
-
-  body::-webkit-scrollbar-thumb {
-    border-radius: 0.8rem;
-    background: rgba(255, 255, 255, 0.2);
-    transition: background 0.4s;
-  }
-
-  body::-webkit-scrollbar-thumb:hover {
-    border-radius: 0.8rem;
-    background-color: rgba(255, 255, 255, 0.8);
-
-  }
-} */
-
 @layer base {
   :root {
     --background: 0 0% 100%;

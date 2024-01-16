@@ -5,25 +5,28 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { useParams } from "next/navigation";
-import Link from "next/link";
+import { useParams, useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
+import { Button } from "./button";
 
 const LanguageSwitcher = () => {
   const params: { locale: "en" | "pt-br" } = useParams();
   const translate = useTranslations("Acessibility");
+  const router = useRouter();
 
   const href = params.locale === "en" ? "/pt-br" : "/en";
   const Flag = params.locale === "en" ? <BrazilFlag /> : <USFlag />;
+
+  const routingTo = () => router.push(href);
   return (
     <Tooltip>
       <TooltipTrigger asChild>
-        <Link href={href}>
+        <Button onClick={routingTo} variant={"ghost"} className="p-0">
           <span className="h-12 w-12 flex items-center justify-center">
             {Flag}
           </span>
           <span className="sr-only">{translate("changeLanguage")}</span>
-        </Link>
+        </Button>
       </TooltipTrigger>
       <TooltipContent side="right" sideOffset={16}>
         <p className="text-base">{translate("changeLanguageTo")}</p>
