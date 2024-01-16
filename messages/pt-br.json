@@ -37,6 +37,9 @@
   },
   "Acessibility":{
     "carouselPrevButton":"Voltar Slide",
-    "carouselNextButton":"Avançar Slide"
+    "carouselNextButton":"Avançar Slide",
+    "changeLanguague": "Mudar Idioma",
+    "changeLanguageTo": "Change language to english (en-US)",
+    "h1": "Samuel Colares, Desenvolvedor Web Front-end."
   }
 }

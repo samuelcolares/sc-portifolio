@@ -4,10 +4,10 @@
     "t1": "HI",
     "t2": "Hi, my name is Samuel",
     "t3": "Hi, my name is Samuel, and normally I'm doing some of these things: ",
-    "t4": "Hi, my name is Samuel, and normally I'm doing some of these things: 1. coding",
-    "t5": "Hi, my name is Samuel, and normally I'm doing some of these things: 2. lifting weights",
-    "t6": "Hi, my name is Samuel, and normally I'm doing some of these things: 3. playing games",
-    "t7": "Hi, my name is Samuel, and normally I'm doing some of these things: 4. eating pizza",
+    "t4": "1. coding",
+    "t5": "1. coding, 2. lifting weights",
+    "t6": "1. coding, 2. lifting weights, 3. playing games",
+    "t7": "1. coding, 2. lifting weights, 3. playing games, 4. eating pizza",
     "t8": "And most important,",
     "t9": "I'm a Front-end web developer",
     "t10": "Or just:",
@@ -37,6 +37,9 @@
   },
   "Acessibility":{
     "carouselPrevButton":"Previous Slide",
-    "carouselNextButton":"Next Slide"
+    "carouselNextButton":"Next Slide",
+    "changeLanguage": "Change Language",
+    "changeLanguageTo": "Alternar idioma para Português Brasileiro (pt-BR)",
+    "h1": "Samuel Colares, Front-end Web Developer."
   }
 }

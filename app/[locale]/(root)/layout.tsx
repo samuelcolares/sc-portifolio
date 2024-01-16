@@ -1,7 +1,8 @@
-import { Navbar, MobileNavbar } from "@/components/navbar";
-import NextIntlProvider from "@/providers/NextIntlProvider";
-import { useMessages } from "next-intl";
 import React from "react";
+import { useMessages } from "next-intl";
+import NextIntlProvider from "@/providers/NextIntlProvider";
+
+import { Navbar, MobileNavbar } from "@/components/navbar";
 
 const Layout = ({
   children,

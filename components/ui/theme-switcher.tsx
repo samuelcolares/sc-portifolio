@@ -13,8 +13,6 @@ import {
 } from "@/components/ui/tooltip";
 import {
   useTranslations,
-  NextIntlClientProvider,
-  useMessages,
 } from "next-intl";
 
 export function ModeToggle() {

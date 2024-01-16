@@ -1,20 +1,18 @@
 "use client";
 import * as React from "react";
+import { useTranslations } from "next-intl";
+
 import { motion } from "framer-motion";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { useTheme } from "next-themes";
-import { useTranslations } from "next-intl";
-import { useParams } from "next/navigation";
 
 const Path = (props: any) => (
   <motion.path
     fill="transparent"
     strokeWidth="3"
-    // stroke="hsl(0, 0%, 97.6470588235294%)"
     className="dark:stroke-white stroke-black lg:group-hover:stroke-primary-color"
     strokeLinecap="round"
     {...props}

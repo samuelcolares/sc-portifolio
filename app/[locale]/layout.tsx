@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-import { Jost } from "next/font/google";
-import "@/styles/global.css";
-import { ThemeProvider } from "@/providers/theme-provider";
-import { cn } from "@/lib/utils";
 
+import "@/styles/global.css";
+
+import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/providers/theme-provider";
+
+import { Jost } from "next/font/google";
 const jost = Jost({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

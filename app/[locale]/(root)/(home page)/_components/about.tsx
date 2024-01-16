@@ -1,8 +1,9 @@
-import ScrollDownButton from "@/components/ui/scroll-down-button";
 import React from "react";
-import coding from "@/public/coding.png";
-import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
+import coding from "@/public/coding.png";
+
+import ScrollDownButton from "@/components/ui/scroll-down-button";
 
 const About = async () => {
   const translate = await getTranslations("About");
@@ -18,6 +19,7 @@ const About = async () => {
         </span>
         : <span className="dark:text-[#5ec0de] text-[#2183A1]">string</span> =
       </h2>
+
       <div className="flex items-center lg:gap-16 gap-8 max-w-[76.5rem] lg:mx-20 xl:flex-row flex-col">
         <p className="text-lg max-w-[50rem]">
           &quot; {translate("about1")}
@@ -25,6 +27,7 @@ const About = async () => {
           <br />
           {translate("about2")} &quot;
         </p>
+
         <Image
           priority
           src={coding.src}
@@ -34,7 +37,11 @@ const About = async () => {
           className="object-contain lg:w-[500px] lg:h-[500px] w-72 h-72 drop-shadow-2xl"
         />
       </div>
-      <ScrollDownButton selector="projects" className="lg:bottom-[5rem] bottom-4" />
+
+      <ScrollDownButton
+        selector="projects"
+        className="lg:bottom-[5rem] bottom-4"
+      />
     </article>
   );
 };

@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { useParams, usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
 
 import { ModeToggle } from "@/components/ui/theme-switcher";
 import {
@@ -10,16 +11,15 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-
-import { motion, useCycle } from "framer-motion";
 import { MenuToggle } from "./ui/menu-toggle";
 import LanguageSwitcher from "./ui/language-switcher";
-import { useTranslations } from "next-intl";
+import { Button } from "./ui/button";
+import { motion, useCycle } from "framer-motion";
+
 import * as variant from "@/animations";
 import { NavbarLinkPROPS } from "@/types";
-import { Links, Routes } from "@/linkRoutes";
-import { Button } from "./ui/button";
 import { scrollIntoView } from "@/lib/utils";
+import { Links, Routes } from "@/linkRoutes";
 
 const Navbar = () => {
   const translate = useTranslations("Navbar");
@@ -82,7 +82,6 @@ const Navbar = () => {
 
 const MobileNavbar = () => {
   const translate = useTranslations("Navbar");
-  const params: { locale: "en" | "pt-br" } = useParams();
   const [isOpen, toggleOpen] = useCycle(false, true);
 
   const animacaoVariante = {
@@ -141,43 +140,6 @@ const MobileNavbar = () => {
           <ModeToggle />
           <LanguageSwitcher />
         </motion.div>
-        {/* <motion.nav
-          className="flex flex-col gap-2 items-center justify-center rounded-md overflow-hidden relative"
-          initial={false}
-          animate={isOpen ? "open" : "closed"}
-        >
-          <motion.div
-            className="absolute top-0 left-0 w-12 bottom-0 dark:bg-white/20 bg-black/20"
-            variants={variant.sidebar}
-          />
-
-          {Routes.map((link, index) => (
-            <NavbarLink
-              key={index}
-              href={link.href}
-              acessibilty={translate(link.acessibilty)}
-              tooltip={translate(link.tooltip)}
-              Icon={link.Icon}
-              local={true}
-            />
-          ))}
-          <MenuToggle
-            toggle={() => toggleOpen()}
-            state={isOpen ? "open" : "closed"}
-          />
-
-          {Links.map((link, index) => (
-            <NavbarLink
-              key={index}
-              href={link.href}
-              acessibilty={translate(link.acessibilty)}
-              tooltip={link.tooltip}
-              Icon={link.Icon}
-            />
-          ))}
-        </motion.nav>
-
-        <span className="h-[5.25rem]"></span> */}
       </motion.aside>
     </TooltipProvider>
   );

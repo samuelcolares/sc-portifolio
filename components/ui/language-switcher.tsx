@@ -5,44 +5,28 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { useParams, usePathname } from "next/navigation";
+import { useParams } from "next/navigation";
 import Link from "next/link";
-import { Moon, SunIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const LanguageSwitcher = () => {
   const params: { locale: "en" | "pt-br" } = useParams();
-  const pathName = usePathname();
-  const href =
-    params.locale === "en"
-      ? pathName.replace("/en", "/pt-br")
-      : pathName.replace("/pt-br", "/en");
+  const translate = useTranslations("Acessibility");
+
+  const href = params.locale === "en" ? "/pt-br" : "/en";
+  const Flag = params.locale === "en" ? <BrazilFlag /> : <USFlag />;
   return (
     <Tooltip>
       <TooltipTrigger asChild>
-        <Link
-          href={href}
-          // className="flex items-center justify-center"
-        >
-          {params.locale === "pt-br" && (
-            <span className="h-12 w-12 flex items-center justify-center">
-              <USFlag />
-            </span>
-          )}
-          {params.locale === "en" && (
-            <span className="h-12 w-12 flex items-center justify-center">
-              <BrazilFlag />
-            </span>
-          )}
-          <span className="sr-only">Toggle Language</span>
+        <Link href={href}>
+          <span className="h-12 w-12 flex items-center justify-center">
+            {Flag}
+          </span>
+          <span className="sr-only">{translate("changeLanguage")}</span>
         </Link>
       </TooltipTrigger>
       <TooltipContent side="right" sideOffset={16}>
-        {params.locale === "pt-br" && (
-          <p className="text-base">Alternar idioma para Inglês</p>
-        )}
-        {params.locale === "en" && (
-          <p className="text-base">Toggle language to Brazilian Portuguese</p>
-        )}
+        <p className="text-base">{translate("changeLanguageTo")}</p>
       </TooltipContent>
     </Tooltip>
   );

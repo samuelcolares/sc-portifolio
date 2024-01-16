@@ -1,10 +1,12 @@
 "use client";
-import Gallery from "@/components/gallery";
-import { Card, CardContent, CardHeader, CardTitle } from "./card";
 import Link from "next/link";
-import { Badge } from "./badge";
-import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
+import { useTranslations } from "next-intl";
+
+import { Card, CardContent, CardHeader, CardTitle } from "./card";
+import { Badge } from "./badge";
+import Gallery from "@/components/gallery";
+
 import { ProjectCardProps } from "@/types";
 
 const ProjectCard: React.FC<ProjectCardProps> = ({

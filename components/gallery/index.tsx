@@ -1,29 +1,14 @@
 "use client";
 import React from "react";
-import { Tab } from "@headlessui/react";
 import Image from "next/image";
+import { Tab } from "@headlessui/react";
 
-import GalleryTab, { ImageType } from "./gallery-tab";
+import GalleryTab from "./gallery-tab";
 
 type GalleryProps = {
   title: string;
   images: Array<string>;
 };
-
-const imagess = [
-  {
-    url: "https://camo.githubusercontent.com/211b09ce1aef685d0aab1ca9865064e97070243fc0cfdc4c82e5a53bafd06be6/68747470733a2f2f696d6775722e636f6d2f744a50315174312e706e67",
-  },
-  {
-    url: "https://camo.githubusercontent.com/e0e65be11e2db79f4e942e234c12f185c5dffb1f2cd51c4591e0ab89ccb513a0/68747470733a2f2f696d6775722e636f6d2f316f346b4343642e706e67",
-  },
-  {
-    url: "https://camo.githubusercontent.com/d7836cc818a0a202b780c66cd7e06903ed1063dc4ac6090ac92e5850331dd76f/68747470733a2f2f696d6775722e636f6d2f75676f614346442e706e67",
-  },
-  // {
-  //   url: "https://camo.githubusercontent.com/211b09ce1aef685d0aab1ca9865064e97070243fc0cfdc4c82e5a53bafd06be6/68747470733a2f2f696d6775722e636f6d2f744a50315174312e706e67",
-  // },
-];
 
 const Gallery: React.FC<GalleryProps> = ({ images, title }) => {
   const mappedImages = images.map((image, index) => (
