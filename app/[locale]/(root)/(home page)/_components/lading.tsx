@@ -43,7 +43,7 @@ const Landing = async () => {
           <AutoType
             wrapper="span"
             sequence={phrases}
-            className="lg:text-3xl lg:text-left text-center text-2xl h-24 lg:h-auto"
+            className="lg:text-3xl lg:text-left text-center text-2xl h-24 lg:h-auto lg:w-[500px] "
           />
         </div>
 
